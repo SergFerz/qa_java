@@ -30,7 +30,7 @@ public class LionTest {
         MockitoAnnotations.initMocks(this);
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}, {1}")
     public static Object[][] hasMane() {
         return new Object[][] {
                 {"Самец", true},

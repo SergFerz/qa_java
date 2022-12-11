@@ -46,7 +46,7 @@ public class FelineTest {
         Assert.assertEquals(expectedKittens, feline.getKittens());
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}, {1}")
     public static Object[][] gatParameters() {
         return new Object[][] {
                 {0, 0},
